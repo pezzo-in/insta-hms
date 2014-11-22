@@ -319,46 +319,6 @@ table.detailList tr.footer:hover td {
 	background-color:#FFFFFF;
 }
 
-input[type=text] {
-	border-top: 1px #999 solid;
-	border-left: 1px #999 solid;
-	border-bottom: 1px #ccc solid;
-	border-right: 1px #ccc solid;
-	color: #666;
-	padding: 2px;
-	height: 21px;
-	width: 138px;
-}
-
-input[type=password] {
-	border-top: 1px #999 solid;
-	border-left: 1px #999 solid;
-	border-bottom: 1px #ccc solid;
-	border-right: 1px #ccc solid;
-	color: #666;
-	padding: 2px;
-	height: 21px;
-	width: 138px;
-}
-
-input[type=text][readonly] {
-	color: #666;
-	background-color: #EFEBE7;
-}
-
-input[type=text][disabled] {
-	color: #999;
-	background-color: #EFEBE7;
-}
-
-input.datefield {
-	width: 75px;
-}
-
-input.timefield {
-	width: 40px;
-}
-
 .toolbar {
 	width: 200px;
 	background-color: #f8fbfe;
@@ -458,18 +418,6 @@ h2 {
 div.autoComplete {
 	float: left;
 	padding-bottom:18px;
-}
-
-.dropdown {
-	border-top:1px #999 solid;
-	border-left:1px #999 solid;
-	border-bottom:1px #ccc solid;
-	border-right:1px #ccc solid;
-	color:#666;
-	height:22px;
-	width:138px;
-	padding:2px 0px 0px 2px;
-	vertical-align: middle;
 }
 
 .tableInn, .tableInnNum {
