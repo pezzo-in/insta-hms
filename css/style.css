@@ -200,7 +200,7 @@ table.resultList th {
     padding: 0px 5px;
     margin-top: 1px;
     color: #333;
-    background-image: url(../images/clmn_hd_bg.jpg);
+    background: #ddd;
     border-bottom: none;
     border-right: none;
     height: 26px;
