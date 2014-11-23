@@ -26,8 +26,6 @@ body {
     padding: 0;
     font: normal 12px Arial, FreeSans, sans-serif;
     color: #666;
-    background-color: #e4eaef;
-    background-image: url(../images/bg.png);
 }
 
 form {
@@ -234,13 +232,6 @@ table.resultList tr.ordered {
     background-color: #EAFADC;
 }
 
-table.detailList {
-    border: 1px #CCCCCC solid;
-    border-bottom: none;
-    empty-cells: show;
-    width: 100%;
-}
-
 table.detailListAddBtn {
     border: 1px #CCCCCC solid;
     border-bottom: none;
@@ -268,19 +259,6 @@ table.detailList td.number {
 
 table.detailList th.number {
     text-align: right;
-}
-
-table.detailList th {
-    text-align: left;
-    padding: 0px 5px;
-    margin-top: 1px;
-    color: #333;
-    background-image: url(../images/clmn_hd_bg.jpg);
-    border-bottom: none;
-    border-right: none;
-    height: 26px;
-    white-space: nowrap;
-    font-weight: normal;
 }
 
 table.detailList tr.edited {
@@ -485,11 +463,6 @@ a:hover {
     color: #666666;
 }
 
-.whitebg {
-    background-color: #FFF;
-    border: 1px #96a9c2 solid;
-}
-
 .brTBN {
     border-top: none;
     border-bottom: none;
@@ -506,10 +479,6 @@ a:hover {
 .Navband {
     background-image: url(../images/global_bg.jpg);
     border-top: 1px #96a9c2 solid;
-}
-
-.GbrB {
-    border-bottom: 1px #96a9c2 solid;
 }
 
 .Tabactive {
@@ -1832,10 +1801,6 @@ table.addButton td {
 
 .headerPadding {
     padding-left: 10px;
-}
-
-.headerContainer {
-    padding: 2px 10px 2px 0;
 }
 
 .homeImg {
