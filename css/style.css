@@ -1239,11 +1239,6 @@ table.formtable, table.smallformtable, table.compactform {
  * A full-width form table is 951 px wide ( = 317*3), (=229*4)
  * and a small-width table is 314 - 12  = 302 (hardcoded)
  */
-table.formtable td, table.smallformtable td, table.loginformtable td, table.compactform td {
-    padding: 5px 0px 2px 5px;
-    color: #666666;
-    height: 29px;
-}
 
 table.formtable td, table.smallformtable td {
     width: 160px; /* 160 + 5 padding = 165 */

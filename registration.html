@@ -46,7 +46,7 @@
     <link type="text/css" rel="stylesheet" href="css/menu.css?10.4.0-3580"/>
     <link type="text/css" rel="stylesheet" href="css/accordion.css?10.4.0-3580"/>
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
-    <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css"/>
+    <link type="text/css" rel="stylesheet" href="css/cool-blue.css"/>
     <script type="text/javascript" src="scripts/common.js?10.4.0-3580" charset="UTF-8"></script>
     <script type="text/javascript" src="scripts/jsvalidate.js?10.4.0-3580" charset="UTF-8"></script>
     <script type="text/javascript" src="scripts/instaautocomplete.js?10.4.0-3580" charset="UTF-8"></script>
@@ -656,7 +656,6 @@
                                                     <div id="grp_patient" class="yuimenu">
                                                         <div class="bd">
                                                             <ul class="dropdown-menu">
-                                                                <hr>
                                                                 <li class="yuimenuitem">
                                                                     <a class="yuimenuitemlabel dropdown-toggle"
                                                                        href="pages/ipservices/IpservicesList.do?_method=getIPDashBoard&sortOrder=mr_no&sortReverse=true">In
@@ -4885,7 +4884,9 @@
                                             <div class="panel panel-default">
                                                 <div class="panel-heading" role="tab" id="headingOne">
                                                     <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <a data-toggle="collapse" data-parent="#accordion"
+                                                           href="#collapseOne" aria-expanded="true"
+                                                           aria-controls="collapseOne">
                                                             Additional Visit I<b><u>N</u></b>formation
                                                             <span class="caret"></span>
                                                         </a>
@@ -4894,75 +4895,44 @@
                                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
                                                      aria-labelledby="headingOne">
                                                     <div class="panel-body">
-                                                        <table class="formtable">
-                                                            <tr>
+                                                        Visit Custom List 1:
+                                                        <select class="dropdown" id="visit_custom_list1"
+                                                                style="width:140px;" size="1" name="visit_custom_list1">
+                                                            <option value="" selected='true'>
+                                                                --Select--
+                                                            </option>
+                                                            <option value='Emergency Room Patient'
+                                                                    >Emergency Room Patient
+                                                            </option>
+                                                            <option value='Non Emergency Room Patient'
+                                                                    >Non Emergency Room Patient
+                                                            </option>
+                                                        </select>
+                                                        <span class="star">*</span>
 
-                                                                <td class="formlabel">Visit Custom List 1:</td>
-                                                                <td>
-                                                                    <select class="dropdown"
-                                                                            id="visit_custom_list1"
-                                                                            style="width:140px;"
-                                                                            size="1"
-                                                                            name="visit_custom_list1">
-                                                                        <option value="" selected='true'>
-                                                                            --Select--
-                                                                        </option>
-                                                                        <option value='Emergency Room Patient'
-                                                                                >Emergency Room Patient
-                                                                        </option>
-                                                                        <option value='Non Emergency Room Patient'
-                                                                                >Non Emergency Room Patient
-                                                                        </option>
-                                                                    </select>
-                                                                    <span class="star">*</span>
-                                                                </td>
-
-                                                                <td class="formlabel">Visit Custom List 2:</td>
-                                                                <td>
-                                                                    <select class="dropdown"
-                                                                            id="visit_custom_list2"
-                                                                            style="width:140px;"
-                                                                            size="1"
-                                                                            name="visit_custom_list2">
-                                                                        <option value="" selected='true'>
-                                                                            --Select--
-                                                                        </option>
-                                                                        <option value='Vc2'
-                                                                                >Vc2
-                                                                        </option>
-                                                                        <option value='Vc22'
-                                                                                >Vc22
-                                                                        </option>
-                                                                    </select>
-                                                                </td>
-                                                                <td class="formlabel">Outside MR Number:</td>
-                                                                <td>
-                                                                    <input type="text" class="field"
-                                                                           name="visit_custom_field1">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-
-
-                                                            </tr>
-                                                            <tr id="displayVisitCustomBtn" style="display:none">
-                                                                <td class="formlabel">
-                                                                    <b><u>V</u></b>More:
-                                                                </td>
-                                                                <td>
-                                                                    <input type="button" name="btnVisitCustomFields"
-                                                                           id="btnVisitCustomFields"
-                                                                           title='Visit Custom Fields'
-                                                                           onclick="return showVisitCustomDialog(this);"
-                                                                           value="..."
-                                                                           accesskey="V" class="btn btn-primary"/>
-                                                                </td>
-                                                                <td>&nbsp;</td>
-                                                                <td>&nbsp;</td>
-                                                                <td>&nbsp;</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                        </table>
+                                                        Visit Custom List 2:
+                                                        <select class="dropdown" id="visit_custom_list2"
+                                                                style="width:140px;" size="1" name="visit_custom_list2">
+                                                            <option value="" selected='true'>
+                                                                --Select--
+                                                            </option>
+                                                            <option value='Vc2'
+                                                                    >Vc2
+                                                            </option>
+                                                            <option value='Vc22'
+                                                                    >Vc22
+                                                            </option>
+                                                        </select>
+                                                        Outside MR Number:
+                                                        <input type="text" class="field"
+                                                               name="visit_custom_field1">
+                                                        <b><u>V</u></b>More:
+                                                        <input type="button" name="btnVisitCustomFields"
+                                                               id="btnVisitCustomFields"
+                                                               title='Visit Custom Fields'
+                                                               onclick="return showVisitCustomDialog(this);"
+                                                               value="..."
+                                                               accesskey="V" class="btn btn-primary"/>
                                                     </div>
                                                 </div>
                                             </div>
@@ -7208,7 +7178,6 @@
                                                     </td>
                                                     <td class="formlabel">Order Date:</td>
                                                     <td>
-
                                                         <input type="text" size="10" name="presdate" id="presdate"
                                                                value="19-11-2014" title="Date is mandatory."
                                                                class="validate-date-in  datefield"
@@ -7217,14 +7186,16 @@
                                                         <img src="images/calendar.png" height="16" width="16"
                                                              style="vertical-align: text-bottom"
                                                              onclick="showCalendar('presdate')"/>
-			<span class="yui-skin-sam">
-				<div id="presdate_container" class="instadateCalContainer" style="display: none; visibility: hidden">
-                    <div class="hd">Calendar</div>
-                    <div class="bd">
-                        <div id="presdate_cal" class="instadateCalendar"></div>
-                    </div>
-                </div>
-			</span>
+                                                        <span class="yui-skin-sam">
+                                                            <div id="presdate_container" class="instadateCalContainer"
+                                                                 style="display: none; visibility: hidden">
+                                                                <div class="hd">Calendar</div>
+                                                                <div class="bd">
+                                                                    <div id="presdate_cal"
+                                                                         class="instadateCalendar"></div>
+                                                                </div>
+                                                            </div>
+                                                        </span>
                                                         <script>
                                                             YAHOO.util.Event.addListener(window, "load", function () {
                                                                 makePopupCalendar('presdate', 'topleft')
@@ -7429,14 +7400,16 @@
                                                         <img src="images/calendar.png" height="16" width="16"
                                                              style="vertical-align: text-bottom"
                                                              onclick="showCalendar('fromDate')"/>
-<span class="yui-skin-sam">
-	<div id="fromDate_container" class="instadateCalContainer" style="display: none; visibility: hidden">
-        <div class="hd">Calendar</div>
-        <div class="bd">
-            <div id="fromDate_cal" class="instadateCalendar"></div>
-        </div>
-    </div>
-</span>
+                                                        <span class="yui-skin-sam">
+                                                            <div id="fromDate_container" class="instadateCalContainer"
+                                                                 style="display: none; visibility: hidden">
+                                                                <div class="hd">Calendar</div>
+                                                                <div class="bd">
+                                                                    <div id="fromDate_cal"
+                                                                         class="instadateCalendar"></div>
+                                                                </div>
+                                                            </div>
+                                                        </span>
                                                         <script>
                                                             YAHOO.util.Event.addListener(window, "load", function () {
                                                                 makePopupCalendar('fromDate', 'topleft')
@@ -8043,19 +8016,19 @@
                                                     <img src="images/calendar.png" height="16" width="16"
                                                          style="vertical-align: text-bottom"
                                                          onclick="showCalendar('eFromDate')"/>
-																																							<span class="yui-skin-sam">
-																																								<div id="eFromDate_container"
-                                                                                                                                                                     class="instadateCalContainer"
-                                                                                                                                                                     style="display: none; visibility: hidden">
-                                                                                                                                                                    <div class="hd">
-                                                                                                                                                                        Calendar
-                                                                                                                                                                    </div>
-                                                                                                                                                                    <div class="bd">
-                                                                                                                                                                        <div id="eFromDate_cal"
-                                                                                                                                                                             class="instadateCalendar"></div>
-                                                                                                                                                                    </div>
-                                                                                                                                                                </div>
-																																							</span>
+                                                    <span class="yui-skin-sam">
+                                                        <div id="eFromDate_container"
+                                                             class="instadateCalContainer"
+                                                             style="display: none; visibility: hidden">
+                                                            <div class="hd">
+                                                                Calendar
+                                                            </div>
+                                                            <div class="bd">
+                                                                <div id="eFromDate_cal"
+                                                                     class="instadateCalendar"></div>
+                                                            </div>
+                                                        </div>
+                                                    </span>
                                                     <script>
                                                         YAHOO.util.Event.addListener(window, "load", function () {
                                                             makePopupCalendar('eFromDate', 'left')
@@ -8078,19 +8051,19 @@
                                                     <img src="images/calendar.png" height="16" width="16"
                                                          style="vertical-align: text-bottom"
                                                          onclick="showCalendar('eToDate')"/>
-																																							<span class="yui-skin-sam">
-																																								<div id="eToDate_container"
-                                                                                                                                                                     class="instadateCalContainer"
-                                                                                                                                                                     style="display: none; visibility: hidden">
-                                                                                                                                                                    <div class="hd">
-                                                                                                                                                                        Calendar
-                                                                                                                                                                    </div>
-                                                                                                                                                                    <div class="bd">
-                                                                                                                                                                        <div id="eToDate_cal"
-                                                                                                                                                                             class="instadateCalendar"></div>
-                                                                                                                                                                    </div>
-                                                                                                                                                                </div>
-																																							</span>
+                                                    <span class="yui-skin-sam">
+                                                        <div id="eToDate_container"
+                                                             class="instadateCalContainer"
+                                                             style="display: none; visibility: hidden">
+                                                            <div class="hd">
+                                                                Calendar
+                                                            </div>
+                                                            <div class="bd">
+                                                                <div id="eToDate_cal"
+                                                                     class="instadateCalendar"></div>
+                                                            </div>
+                                                        </div>
+                                                    </span>
                                                     <script>
                                                         YAHOO.util.Event.addListener(window, "load", function () {
                                                             makePopupCalendar('eToDate', 'left')
